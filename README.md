@@ -1,10 +1,10 @@
-# DSC Isothermal Crystallization Analysis
+# DSC Isothermal Crystallisation Analysis
 
-A MATLAB tool for analyzing Differential Scanning Calorimetry (DSC) data during isothermal crystallization experiments.
+A MATLAB tool for analyzing Differential Scanning Calorimetry (DSC) data during isothermal crystallisation experiments.
 
 ## Overview
 
-This tool processes DSC data from isothermal crystallization experiments where samples are:
+This tool processes DSC data from isothermal crystallisation experiments where samples are:
 1. Heated from 25°C to 300°C at 10°C/min
 2. Held at 300°C for 3 minutes
 3. Cooled from 300°C to target temperature at 50°C/min
@@ -17,7 +17,7 @@ The analysis automatically identifies the first minimum after the isothermal per
 - **Flexible temperature analysis**: Supports any number of target temperatures
 - **Automatic timing calculation**: Calculates isothermal start times based on heating/cooling rates
 - **Origin normalization**: Sets first minimum as (0,0) for each temperature curve
-- **Crystallization detection**: Automatically identifies crystallization completion times
+- **Crystallisation detection**: Automatically identifies crystallisation completion times
 - **Multi-scale visualization**: Three complementary views (140 min, 120 min, 60 min)
 - **Professional plotting**: Enhanced grids and formatting for publication-quality figures
 
@@ -30,7 +30,7 @@ The analysis automatically identifies the first minimum after the isothermal per
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/dsc-isothermal-analysis.git
+git clone https://github.com/acorn2984/DSC_Crystallisation_Peaks.git
 ```
 
 2. Add the folder to your MATLAB path or navigate to the folder in MATLAB
@@ -64,13 +64,13 @@ The tool generates:
 - **Plot 3**: 0-60 minutes from first minimum (zoomed view)
 
 ### Data
-- Crystallization times for each temperature
+- Crystallisation times for each temperature
 - Summary table with results
 - Saved MATLAB workspace (.mat file) with all processed data
 
 ### Console Output
 ```
-=== ISOTHERMAL CRYSTALLIZATION ANALYSIS RESULTS ===
+=== ISOTHERMAL CRYSTALLISATION ANALYSIS RESULTS ===
 Material: PA410 GF50 High MW
 Temperature  Crystallization Time  Crystallization Time
 (°C)         (seconds)            (minutes)
@@ -92,13 +92,13 @@ where:
 - cooling_time = (300-target_temp)/50 * 60 seconds
 ```
 
-### Origin Normalization
+### Origin Normalisation
 1. Identifies first minimum in heat flow after isothermal period begins
 2. Sets this minimum as time = 0 and heat flow = 0
 3. All subsequent data points are relative to this origin
 
-### Crystallization Detection
-Uses a smoothed minimum-finding algorithm to detect when crystallization is complete (plateau reached).
+### Crystallisation Detection
+Uses a smoothed minimum-finding algorithm to detect when crystallisation is complete (plateau reached).
 
 ## File Structure
 
@@ -107,10 +107,6 @@ dsc-isothermal-analysis/
 ├── README.md
 ├── LICENSE
 ├── dsc_isothermal_analysis.m     # Main analysis script
-└── examples/
-    ├── sample_data_245C.txt      # Example DSC data file
-    ├── sample_data_247C.txt
-    └── sample_data_250C.txt
 ```
 
 ## Example Data Format
@@ -146,7 +142,7 @@ If you use this tool in your research, please cite:
   title = {DSC Isothermal Crystallization Analysis},
   author = {Anjali Malik},
   year = {2025},
-  url = {https://github.com/yourusername/dsc-isothermal-analysis},
+  url = {https://github.com/acorn2984/DSC_Crystallisation_Peaks},
   version = {1.0.0}
 }
 ```
@@ -184,4 +180,6 @@ For questions or issues:
 ## Acknowledgments
 
 - Developed for polymer crystallization kinetics research
+- I would like to express my sincere thanks to Ellen Heeley for her invaluable support and guidance throughout this project. I’m truly grateful for the opportunity to work on such an exciting and meaningful endeavour.
+- A heartfelt thank you to Jai Gupta for being an exceptional supervisor during my internship. I’ve learnt a great deal from this experience and deeply appreciate the mentorship.
 - Thanks to the materials science community for feedback and testing
